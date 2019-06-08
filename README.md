@@ -2,10 +2,10 @@
 A simple game using Tkinter library.
 
 # The rules:
-1- There are 3 colors: Red, Green, and Blue. From which one will be chosen at random when you press Start.
-2- There are 3 buttons to click on. Each button shows a number and a color 
-3- You must choose the button with the matching color to the color Label as well as the highest number ranging from 1 to 100.
-4- Pressing a correct button will give 10 points, whereas an incorrect choice will take away 5 points.
+1- There are 3 colors: Red, Green, and Blue. From which one will be chosen at random when you press Start.  <br />
+2- There are 3 buttons to click on. Each button shows a number and a color.  <br />
+3- You must choose the button with the matching color to the color Label as well as the highest number ranging from 1 to 100.  <br />
+4- Pressing a correct button will give 10 points, whereas an incorrect choice will take away 5 points.  <br />
 
 # Note:
 The color that you must choose does no update along with the clickable buttons.
