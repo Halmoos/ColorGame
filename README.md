@@ -1,6 +1,9 @@
 # ColorGame
 A simple game using Tkinter library.
 
+# Install notes:
+The game is coded in Python2.7 and I personally run it using PyCharm IDE.
+
 # The rules:
 1- There are 3 colors: Red, Green, and Blue. From which one will be chosen at random when you press Start.  <br />
 2- There are 3 buttons to click on. Each button shows a number and a color.  <br />
