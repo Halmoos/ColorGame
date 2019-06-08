@@ -1,4 +1,4 @@
-from Tkinter import *
+from Tkinter import Label, Checkbutton, Button, Frame, Tk, StringVar
 import random
 
 class ColorGame(Frame):
@@ -32,16 +32,16 @@ class ColorGame(Frame):
         self.user_color_label = Label(self, text = 'Your Color', width = 20, height = 2, relief = 'raised')
         self.user_color_label.pack()
 
-        self.score_label = Label(self, text = 'Score', width = 10, relief = 'raised')
+        self.score_label = Label(self, text = 'Score: 0', width = 10, relief = 'raised')
         self.score_label.pack()
 
-        self.button_1 = Button(self, text = 'Button 1', width = 20, height = 5, command = self.getValue_Color1)
+        self.button_1 = Button(self, text = 'Button 1', width = 20, height = 5, command = self.get_Value_Color1)
         self.button_1.pack()
 
-        self.button_2 = Button(self, text = 'Button 2', width = 20, height = 5, command = self.getValue_Color2)
+        self.button_2 = Button(self, text = 'Button 2', width = 20, height = 5, command = self.get_Value_Color2)
         self.button_2.pack()
 
-        self.button_3 = Button(self, text = 'Button 3', width = 20, height = 5, command = self.getValue_Color3)
+        self.button_3 = Button(self, text = 'Button 3', width = 20, height = 5, command = self.get_Value_Color3)
         self.button_3.pack()
         self.pack()
 
@@ -85,21 +85,21 @@ class ColorGame(Frame):
         self.update_idletasks()
         self.updating = self.after(self.speed, self.game_main)
 
-    def getValue_Color1(self):
+    def get_Value_Color1(self):
         if self.button_1.cget('text') == self.max and self.button_1.cget('bg') == self.user_color:
             self.user_score += 10
         else:
             self.user_score -= 5
         self.score_label.configure(text='Score: ' + str(self.user_score))
 
-    def getValue_Color2(self):
+    def get_Value_Color2(self):
         if self.button_2.cget('text') == self.max and self.button_2.cget('bg') == self.user_color:
             self.user_score += 10
         else:
             self.user_score -= 5
         self.score_label.configure(text='Score: ' + str(self.user_score))
 
-    def getValue_Color3(self):
+    def get_Value_Color3(self):
         if self.button_3.cget('text') == self.max and self.button_3.cget('bg') == self.user_color:
             self.user_score += 10
         else:
